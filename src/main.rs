@@ -193,7 +193,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let current_ip = get_current_ip_addr(&client);
 
     match find_subdomain_record(&res.records, &args.name) {
-        Some(record) => match current_ip == record.ip_addr {
+        Some(record) => match current_ip != record.ip_addr {
             true => update_record(&client, &current_ip, record, &args.zone),
             false => info!("Nothing to update, DNS in sync"),
         },
