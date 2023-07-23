@@ -133,6 +133,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "50d30906286121d95be3d479533b458f87493b30a4b5f79a607db8f5d11aa91f"
 
 [[package]]
+name = "cfdns"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "dotenv",
+ "env_logger",
+ "log",
+ "reqwest",
+ "serde",
+ "serde_derive",
+ "serde_json",
+]
+
+[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -200,20 +214,6 @@ name = "core-foundation-sys"
 version = "0.8.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e496a50fda8aacccc86d7529e2c1e0892dbd0f898a6b5645b5561b89c3210efa"
-
-[[package]]
-name = "doddns"
-version = "0.1.0"
-dependencies = [
- "clap",
- "dotenv",
- "env_logger",
- "log",
- "reqwest",
- "serde",
- "serde_derive",
- "serde_json",
-]
 
 [[package]]
 name = "dotenv"
